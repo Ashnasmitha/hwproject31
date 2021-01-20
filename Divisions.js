@@ -12,7 +12,7 @@ class Divisions{
     }
     display(){
         var pos = this.body.position;
-        rectMode(CENTRE);
+        rectMode(CENTER);
         fill (255);
         rect(pos.x,pos.y,this.w,this.h);
 

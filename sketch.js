@@ -29,23 +29,23 @@ function setup() {
 
 
 	for(var i=0;i<=width ;i=i+80){
-		divisions.push(new Divisions(i,250,10,300));
+		divisions.push(new Divisions(i,650,10,300));
 	}
 
-	for(var j=40; j<=width;j+50){
+	for(var j=40; j<=width;j=j+50){
 		plinkos.push(new Plinkos(j,75,10));
 	}
 
-	for(var j=15;j<=width-10;j+50){
-		plinkos.push(new Plinkos(j,175));
+	for(var j=15;j<=width-10;j=j+50){
+		plinkos.push(new Plinkos(j,175,10));
 	}
 
-	for(var j=40; j<=width;j+50){
+	for(var j=40; j<=width;j=j+50){
 		plinkos.push(new Plinkos(j,275,10));
 	}
 
-	for(var j=15;j<=width-10;j+50){
-		plinkos.push(new Plinkos(j,375));
+	for(var j=15;j<=width-10;j=j+50){
+		plinkos.push(new Plinkos(j,375,10));
 	}
 
 
@@ -73,7 +73,7 @@ function draw() {
 		divisions[i].display();
 	}
 
-	for(var j=0;j<plinkos.length;j=j++){
+	for(var j=0;j<plinkos.length;j++){
 
 		plinkos[j].display();
 	}
